@@ -5,7 +5,7 @@ const { chromium } = require('playwright');
 
 (async () => {
     console.log(Date.now)
-    const browser = await chromium.launch({headless : true})
+    const browser = await chromium.launch({headless : false})
     const page = await browser.newPage()
     await page.goto('https://www.instagram.com/accounts/login/')
     await page.fill('input[name="username"]', "damiian_al")
