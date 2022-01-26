@@ -8,8 +8,8 @@ const { chromium } = require('playwright');
     const browser = await chromium.launch({headless : false})
     const page = await browser.newPage()
     await page.goto('https://www.instagram.com/accounts/login/')
-    await page.fill('input[name="username"]', "damiian_al")
-    await page.fill('input[name="password"]', "empanadadecarne")
+    await page.fill('input[name="username"]', process.env.USER)
+    await page.fill('input[name="password"]', process.env.PASS)
     await page.locator("#loginForm>div>div:nth-child(3)>button>div").click()
     await page.waitForTimeout(10000)
     
