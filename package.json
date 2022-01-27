@@ -1,7 +1,6 @@
 {
   "name": "taller-los-angeles",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
@@ -22,5 +21,6 @@
     "node-fetch": "^2.6.1",
     "nodemon": "^2.0.15",
     "playwright": "^1.18.0"
-  }
+  },
+  "description": ""
 }
