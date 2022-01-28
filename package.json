@@ -22,5 +22,8 @@
     "nodemon": "^2.0.15",
     "playwright": "^1.18.0"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^14.3.2"
+  }
 }
