@@ -5,16 +5,16 @@ const { chromium } = require('playwright');
 
 (async () => {
     try{
-    console.log(Date.now)
-    const browser = await chromium.launch({headless : false})
+    console.log("pasa algo")
+    const browser = await chromium.launch({headless : true})
     const page = await browser.newPage()
-    // await page.goto('https://www.instagram.com/accounts/login/')
-    // //await page.waitForTimeout(10000)
-    // await page.fill('input[name="username"]', process.env.USER)
-    // await page.waitForTimeout(2000)
-    // await page.fill('input[name="password"]', process.env.PASS)
-    // await page.waitForTimeout(2000)
-    // await page.locator("#loginForm>div>div:nth-child(3)>button>div").click()
+    await page.goto('https://www.instagram.com/accounts/login/')
+    //await page.waitForTimeout(10000)
+    await page.fill('input[name="username"]', process.env.USER)
+    await page.waitForTimeout(2000)
+    await page.fill('input[name="password"]', process.env.PASS)
+    await page.waitForTimeout(2000)
+    await page.locator("#loginForm>div>div:nth-child(3)>button>div").click()
     
     await page.goto('https://www.instagram.com/leomessi/?__a=1')
     const text = await page.innerText('body>pre');
