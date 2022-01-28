@@ -1,16 +1,12 @@
 //require("dotenv").config()
-const { chromium } = require('playwright');
+const { chromium } = require("playwright-chromium")
 
 
 
 (async () => {
     try{
     console.log("pasa algo")
-    const browser = await chromium.launch({headless : true,"headless": false,
-    "executablePath": "/usr/bin/google-chrome",
-    "args": [
-    "--no-sandbox",
-    "--no-zygote"]})
+    const browser = await chromium.launch({headless : true, chromiumSandbox: false})
     const page = await browser.newPage()
     await page.goto('https://www.instagram.com/accounts/login/')
     //await page.waitForTimeout(10000)
