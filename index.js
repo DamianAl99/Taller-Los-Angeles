@@ -6,7 +6,9 @@ const { chromium } = require("playwright-chromium")
 (async () => {
     try{
     console.log("pasa algo")
-    const browser = await chromium.launch({headless : true, chromiumSandbox: false})
+    const browser = await { chromium, firefox }[browserName].launch({
+        chromiumSandbox: false
+      })
     const page = await browser.newPage()
     await page.goto('https://www.instagram.com/accounts/login/')
     //await page.waitForTimeout(10000)
