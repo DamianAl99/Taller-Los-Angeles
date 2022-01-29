@@ -1,4 +1,4 @@
-//require("dotenv").config()
+require("dotenv").config()
 // const { chromium } = require("playwright-chromium")
 // (async () => {
 //     try{
@@ -32,20 +32,21 @@ const app = express()
 //app.use(express.static("./public"))
 const port = process.env.PORT || 3000;
 
-app.get("/", async (req, res) => {
+var a = async () => {
   const browserName = "chromium"
-  if (!["chromium", "firefox"].includes(browserName)) {
+  if (!["chromium"].includes(browserName)) {
     return res.status(500).send(`invalid browser name (${browserName})!`)
   }
   const url = "https://www.instagram.com/accounts/login/"
-  const waitUntil = req.query.waitUntil || "load"
-  const width = req.query.width ? parseInt(req.query.width, 10) : 1920
-  const height = req.query.height ? parseInt(req.query.height, 10) : 1080
+  const waitUntil = "load"
+  const width =  1920
+  const height = 1080
   console.log(`Incoming request for browser '${browserName}' and URL '${url}'`)
   try {
     /** @type {import('playwright-chromium').Browser} */
     const browser = await { chromium }[browserName].launch({
-      chromiumSandbox: false
+      headless: true
+    //  chromiumSandbox: true
     })
     const page = await browser.newPage({
       viewport: {
@@ -61,21 +62,27 @@ app.get("/", async (req, res) => {
     await page.waitForTimeout(2000)
     await page.fill('input[name="password"]', process.env.PASS)
     await page.waitForTimeout(2000)
+    await page.screenshot({path: "./imga.png"})
     await page.locator("#loginForm>div>div:nth-child(3)>button>div").click()
-    
-    await page.goto('https://www.instagram.com/leomessi/?__a=1')
+    await page.waitForTimeout(5000)
+    //await page.screenshot({path: "./imgb.png"})
+    await page.goto('https://www.instagram.com/leomessi/?__a=1', {timeout: 10 * 1000,
+    waitUntil})
+    await page.waitForTimeout(2000)
+    //await page.screenshot({path: "./imgc.png"})
     const text = await page.innerText('body>pre');
     var textJson = JSON.parse(text)
     var data = ""
     textJson.graphql.user.edge_owner_to_timeline_media.edges.map(item => data += item.node.display_url)
     await browser.close()
     console.log(data)
-    res.send(data)
   } catch (err) {
+    console.log(err)
     res.status(500).send(`Something went wrong: ${err}`)
   }
-});
+};
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}!`);
+  a()
 });
