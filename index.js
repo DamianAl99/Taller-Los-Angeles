@@ -1,4 +1,4 @@
-require("dotenv").config()
+//require("dotenv").config()
 // const { chromium } = require("playwright-chromium")
 // (async () => {
 //     try{
