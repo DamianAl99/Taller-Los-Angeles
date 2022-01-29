@@ -1,0 +1,47 @@
+:root {
+    --orange-color: #ff6f00;
+    --text-color: #464646;
+    --secondText-color: #fcfcfc;
+    --background-color: #fdfdfd;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    width: 100%;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, span{
+    font-weight: normal !important;
+}
+.super-title{
+    font-size: 2em;
+    color: var(--orange-color);
+}
+.super-subtitle{
+    font-size: 1.7em;
+    color: var(--text-color);
+}
+.main-title{
+    font-size: 1.5em;
+    color: var(--orange-color);
+}
+.title{
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+.decription{
+    font-size: 1em;
+    color: var(--text-color);
+}
+.p{
+    font-size: .8em;
+    color: var(--text-color);
+}
+.bolderWords{
+    font-weight: bold;
+}
