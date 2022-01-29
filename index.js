@@ -46,7 +46,7 @@ var a = async () => {
     /** @type {import('playwright-chromium').Browser} */
     const browser = await { chromium }[browserName].launch({
       //headless: true
-        chromiumSandbox: true
+        chromiumSandbox: false
     })
     const page = await browser.newPage({
       viewport: {
