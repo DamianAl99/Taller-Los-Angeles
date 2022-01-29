@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DamianAl99/Taller-Los-Angeles#readme",
   "dependencies": {
+    "express": "^4.17.2",
     "fs": "0.0.1-security",
     "node-fetch": "^2.6.1",
     "nodemon": "^2.0.15",
