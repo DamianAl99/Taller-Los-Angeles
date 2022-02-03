@@ -79,7 +79,7 @@
     .menu-icon-open {
         color: var(--orange-color);
         font-size: 1.5em;
-        z-index: 8;
+        z-index: 0;
     }
     .menu-icon-close {
         color: var(--secondText-color);
@@ -106,11 +106,11 @@
 
 
     header{
-        width: 400px;
+        width: 100%;
         height: 100vh;
         background: var(--orange-color);
         position: fixed;
-        transform: translateX(500px);
+        transform: translateX(100%);
         top: 0;
         transition: 0.2s linear;
     }
