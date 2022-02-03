@@ -8,24 +8,21 @@
     }
     *{
         margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     html{
-        
         scroll-behavior: smooth;
     }
     body{
         margin: 0;
         padding: 0;
-        background: var(--background-color);
+        overflow-x: hidden;
+        background-color: var(--background-color);
         background-image: url("../images/img-b.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-x: -400px;
         background-attachment: fixed;
-        width: 100%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        overflow-x: hidden;
-        position: absolute;
+        position: relative;
     }
 
     h1, h2, h3, h4, span, p{
@@ -109,16 +106,16 @@
 
 
     header{
-        width: 100%;
+        width: 400px;
         height: 100vh;
         background: var(--orange-color);
-        position: absolute;
-        left: 100%;
+        position: fixed;
+        transform: translateX(500px);
         top: 0;
         transition: 0.2s linear;
     }
     .header-open{/*se debe agregar esta clase para el menu*/
-        left: 0; 
+        transform: translateX(0px);
     }
     header #menu{
         width: 90%;
