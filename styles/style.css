@@ -27,28 +27,34 @@
     h1, h2, h3, h4, span, p{
         font-weight: normal;
         font-size: 14px;
+        color: rgb(44, 44, 44);
     }
     .super-title{
         font-size: 2em;
         font-weight: bolder;
         letter-spacing: 0.5px;
         color: var(--secondText-color);
+        text-align: center;
     }
     .super-subtitle{
         font-size: 1.5em;
         color: var(--text-color);
+        text-align: center;
     }
     .main-title{
         font-size: 1.5em;
         color: var(--orange-color);
+        text-align: center;
     }
     .title{
         font-size: 1.2em;
         color: var(--text-color);
+        text-align: center;
     }
     .decription{
         font-size: 1em;
         color: var(--text-color);
+        text-align: left;
     }
     .p{
         font-size: .8em;
@@ -107,7 +113,7 @@
         top: 0;
         transition: 0.2s linear;
     }
-    .header{/*se debe agregar esta clase para el menu*/
+    .header-open{/*se debe agregar esta clase para el menu*/
         left: 0; 
     }
     header #menu{
@@ -176,8 +182,59 @@
 
     #servicios{
         background: var(--background-color);
+        padding-bottom: 20px;
     }
-   
+    #servicios .item-servicios{
+        width: calc(90% - 20px);
+        margin: auto;
+        padding: 10px;
+        background-color: white;
+        box-shadow: 0 0 10px rgb(199, 199, 199);
+        margin-top: 20px;
+    }
+
+    #proyectos{
+        background: rgb(44, 44, 44);
+        padding-bottom: 20px;
+    }
+    #proyectos .proyectos-items{
+        width: calc(90% - 20px);
+        margin: auto;
+        padding: 10px;
+    }
+    #proyectos .proyectos-items .item{
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        margin: 20px 0 20px 0;
+        border-radius: 4px;
+        background: black;
+    }
+    #proyectos .proyectos-items .item img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    footer{
+        background: rgb(44, 44, 44);
+        padding: 10px 0 10px 0;
+    }
+    footer .redes-sociales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer .redes-sociales .ig i,
+    footer .redes-sociales .fb i{
+        font-size: 2em;
+        color: black;
+    }
+    footer .derechos p{
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+    }
 
 
 
