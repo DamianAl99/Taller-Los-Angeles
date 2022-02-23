@@ -112,11 +112,17 @@
         background: var(--orange-color);
         position: fixed;
         transform: translateX(100%);
+        -o-transform: translateX(100);
+        -ms-transform: translateX(100px);
+        -webkit-transform: translateX(100px);
         top: 0;
         transition: 0.2s linear;
     }
     .header-open{/*se debe agregar esta clase para el menu*/
         transform: translateX(0px);
+        -o-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -webkit-transform: translateX(0px);
     }
     header #menu{
         width: 90%;
@@ -233,12 +239,19 @@
         top: 0;
         position: fixed;
         transform: translateX(100%);
+        -o-transform: translateX(100);
+        -ms-transform: translateX(100px);
+        -webkit-transform: translateX(100px);
         transition: 0.5s ease-in;
         overflow-y: scroll;
         overflow-x: hidden;
     }
     .mostrarProyectos{
         transform: translateX(0px) !important;
+        transform: translateX(0px) !important;
+        -o-transform: translateX(0px) !important;
+        -ms-transform: translateX(0px) !important;
+        -webkit-transform: translateX(0px) !important;
     }
     .ocultarMain{
         display: none;
@@ -300,12 +313,18 @@
         top: 0;
         position: fixed;
         transform: translateX(100%);
+        -o-transform: translateX(100);
+        -ms-transform: translateX(100px);
+        -webkit-transform: translateX(100px);
         transition: 0.5s ease-in;
         overflow-y: scroll;
         overflow-x: hidden;
     }
     .mostrarContactos{
         transform: translateX(0px) !important;
+        -o-transform: translateX(0px) !important;
+        -ms-transform: translateX(0px) !important;
+        -webkit-transform: translateX(0px) !important;
     }
     #pagesContactos .maps{
         width: 90%;
