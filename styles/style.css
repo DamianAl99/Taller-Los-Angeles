@@ -25,10 +25,11 @@
         position: relative;
     }
 
-    h1, h2, h3, h4, span, p{
+    h1, h2, h3, h4, span, p, a{
         font-weight: normal;
         font-size: 14px;
         color: rgb(44, 44, 44);
+        text-decoration: none;
     }
     .super-title{
         font-size: 2em;
@@ -224,10 +225,10 @@
 
 
     #pagesProyectos{
-        background: red;
+        background: var(--background-color);
         padding-bottom: 20px;
         width: 100%;
-        height: 600px;
+        height: 100vh;
         padding-top: 40px;
         top: 0;
         position: fixed;
@@ -242,60 +243,31 @@
     .ocultarMain{
         display: none;
     }
-    .mostrarProyectos .divEngranage{
+    .divEngranage{
         background: transparent;
-        width: 140px;
-        height: 140px;
+        width: 100px;
+        height: 100px;
         border-radius: 100%; 
         animation: vueltaEngranaje 5s infinite linear;
         margin-top: 50%;
-        left: -60px;
+        left: -50px;
         cursor: pointer;
         position:fixed;
     }
-    .mostrarProyectos .divEngranage .engranage{
-        width: 50px;
-        height: 0;
-        margin-top: 70px;
-        margin-left: 30px;
-        border-top: 35px solid var(--orange-color);
-        border-right: 15px solid transparent;
-        border-left: 15px solid transparent;
-        position: absolute; 
+    .divEngranage img{
+        color: var(--orange-color);
     }
-    .mostrarProyectos .divEngranage .engranage:before{
-        position: absolute;
-        content: "";
-        height: 0;
-        width: 50px;
-        margin: auto;
-        border-bottom: 35px solid var(--orange-color);
-        border-right: 15px solid transparent;
-        border-left: 15px solid transparent;
-        bottom: 34px;
-        left: -15px;
-    }
-    .mostrarProyectos .divEngranage .engranage:after{
-        content: "";
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        background: white;
-        position: absolute;
-        right: 18px;
-        top: -40px;
-    }
-    #pagesProyectos .btn-volver{
+    .btn-volver{
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
-    #pagesProyectos .btn-volver button{
+    .btn-volver button{
         margin-left: calc(50% - 75px);
         background: transparent;
         border: 2px var(--orange-color) solid;
         color: var(--orange-color);
     }
-    #pagesProyectos .btn-volver button:hover{
+    .btn-volver button:hover{
         background: var(--orange-color);
         color: rgb(255, 255, 255);
     }
@@ -316,6 +288,54 @@
         object-fit: cover;
         height: 100%;
         width: 100%;
+    }
+
+
+    #pagesContactos{
+        background:var(--background-color);
+        padding-bottom: 20px;
+        width: 100%;
+        height: 100vh;
+        padding-top: 40px;
+        top: 0;
+        position: fixed;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .mostrarContactos{
+        transform: translateX(0px) !important;
+    }
+    #pagesContactos .maps{
+        width: 90%;
+        margin: auto;
+        height: auto;
+        overflow-x: hidden;
+    }
+    #pagesContactos .maps iframe{
+        width: 100%;
+    }
+    #pagesContactos .maps .calle{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    #pagesContactos .maps .calle h4{
+        text-align: center;
+    } 
+    #pagesContactos .btn-ws{
+        width: 100%;
+        padding: 10px 0 10px 0;
+        background: transparent;
+    }
+    #pagesContactos .btn-ws a{  
+        color: white;
+        font-size: 1em;
+    }
+    #pagesContactos .btn-ws button{
+        width: 200px;
+        margin-left: calc(50% - 100px);
     }
 
 

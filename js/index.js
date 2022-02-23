@@ -6,9 +6,13 @@ let divServicios = document.querySelector(".super-item");
 let divProyectos = document.querySelector(".proyectos-items");
 let divPagesProyectos = document.querySelector(".pagesProyectos-items");
 
+let btnContactos = document.querySelector(".btn-contactos");
+let btnVolverContactos = document.querySelector(".volverContactos");
+let btnEngranageContactos = document.querySelector(".engranageContactos");
+
 let btnProyectos = document.querySelector(".btn-proyectos");
-let btnVolver = document.querySelector("#Volver");
-let btnEngranage = document.querySelector(".divEngranage");
+let btnVolver = document.querySelector(".volverProyectos");
+let btnEngranage = document.querySelector(".engranageProyectos");
 
 const clickMenu = () => {
   btnMenu.addEventListener("click", () => {
@@ -23,16 +27,36 @@ const clickMenu = () => {
 };
 
 const clickProyectos = () => {
-  btnProyectos.addEventListener("click", ()=>{
-    document.querySelector("#pagesProyectos").classList.toggle("mostrarProyectos")
+  btnProyectos.addEventListener("click", () => {
+    document
+      .querySelector("#pagesProyectos")
+      .classList.toggle("mostrarProyectos");
+    document.querySelector(".main").classList.toggle("ocultarMain");
+  });
+  btnVolver.addEventListener("click", () => {
+    document
+      .querySelector("#pagesProyectos")
+      .classList.toggle("mostrarProyectos");
+    document.querySelector(".main").classList.toggle("ocultarMain");
+  });
+  btnEngranage.addEventListener("click", () => {
+    document
+      .querySelector("#pagesProyectos")
+      .classList.toggle("mostrarProyectos");
+    document.querySelector(".main").classList.toggle("ocultarMain");
+  });
+};
+const clickContactos = () => {
+  btnContactos.addEventListener("click", ()=>{
+    document.querySelector("#pagesContactos").classList.toggle("mostrarContactos")
     document.querySelector(".main").classList.toggle("ocultarMain")
   })
-  btnVolver.addEventListener("click", ()=>{
-    document.querySelector("#pagesProyectos").classList.toggle("mostrarProyectos")
+  btnVolverContactos.addEventListener("click", ()=>{
+    document.querySelector("#pagesContactos").classList.toggle("mostrarContactos")
     document.querySelector(".main").classList.toggle("ocultarMain")
   })
-  btnEngranage.addEventListener("click", ()=>{
-    document.querySelector("#pagesProyectos").classList.toggle("mostrarProyectos")
+  btnEngranageContactos.addEventListener("click", ()=>{
+    document.querySelector("#pagesContactos").classList.toggle("mostrarContactos")
     document.querySelector(".main").classList.toggle("ocultarMain")
   })
 }
@@ -148,3 +172,4 @@ pintarProyectosJson();
 pintarPagesProyectosJson();
 clickMenu();
 clickProyectos();
+clickContactos();
