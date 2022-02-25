@@ -11,7 +11,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     html{
-        scroll-behavior: smooth;
+        background: var(--background-color);
     }
     body{
         margin: 0;
@@ -31,6 +31,7 @@
         -webkit-background-attachment: fixed;
         -moz-background-attachment: fixed;
         -o-background-attachment: fixed;
+        background-position: center center;
         position: relative;
     }
 
