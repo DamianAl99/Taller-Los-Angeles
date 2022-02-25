@@ -19,9 +19,18 @@
         overflow-x: hidden;
         background-color: var(--background-color);
         background-image: url("../images/img-b.jpg");
+        -webkit-background-image: url("../images/img-b.jpg");
+        -moz-background-image: url("../images/img-b.jpg");
+        -o-background-image: url("../images/img-b.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -o-background-attachment: fixed;
         position: relative;
     }
 
