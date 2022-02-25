@@ -112,9 +112,9 @@
         background: var(--orange-color);
         position: fixed;
         transform: translateX(100%);
-        -o-transform: translateX(100);
-        -ms-transform: translateX(100px);
-        -webkit-transform: translateX(100px);
+        -o-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
         top: 0;
         transition: 0.2s linear;
     }
@@ -239,15 +239,14 @@
         top: 0;
         position: fixed;
         transform: translateX(100%);
-        -o-transform: translateX(100);
-        -ms-transform: translateX(100px);
-        -webkit-transform: translateX(100px);
+        -o-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
         transition: 0.5s ease-in;
         overflow-y: scroll;
         overflow-x: hidden;
     }
     .mostrarProyectos{
-        transform: translateX(0px) !important;
         transform: translateX(0px) !important;
         -o-transform: translateX(0px) !important;
         -ms-transform: translateX(0px) !important;
@@ -313,13 +312,14 @@
         top: 0;
         position: fixed;
         transform: translateX(100%);
-        -o-transform: translateX(100);
-        -ms-transform: translateX(100px);
-        -webkit-transform: translateX(100px);
+        -o-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
         transition: 0.5s ease-in;
         overflow-y: scroll;
         overflow-x: hidden;
-    }
+        -moz-transform: translateX(100%);
+}
     .mostrarContactos{
         transform: translateX(0px) !important;
         -o-transform: translateX(0px) !important;
