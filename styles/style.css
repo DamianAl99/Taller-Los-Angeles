@@ -215,13 +215,14 @@
 
     #proyectos{
         background: rgb(44, 44, 44);
-        padding-bottom: 20px;
+        padding-bottom: 20px; 
+        width: 100%;  
     }
-    #proyectos div{
+    #proyectos .proyectos-items{
         width: calc(90% - 20px);
         margin: auto;
     }
-    #proyectos div .proyectos-items{
+    #proyectos .proyectos-items div {
         width: 100%;
     }
     #proyectos .proyectos-items .item{
@@ -450,18 +451,20 @@
     }
     #proyectos{
         width: 90%;
+        margin: auto;
     }
     #proyectos .proyectos-items{
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: transparent;
-        width: 100%;
+        grid-gap: 10px;
+        width: 95%;
     }
     #proyectos .proyectos-items div:last-child{
         grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
     }
     
   }
