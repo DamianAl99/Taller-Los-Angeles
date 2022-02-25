@@ -151,8 +151,10 @@ const pintarProyectosJson = () => {
   let content = "";
   ProyectosJson.forEach((proyectos) => {
     content += `
+    <div>
       <div class="title">${proyectos.title}</div>
-      <div class="item"><img loading="lazy  "src="${proyectos.img}" alt="" srcset=""></div>`;
+      <div class="item"><img loading="lazy  "src="${proyectos.img}" alt="" srcset=""></div>
+      </div>`;
   });
   divProyectos.innerHTML = content;
 };

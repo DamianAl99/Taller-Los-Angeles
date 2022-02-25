@@ -17,7 +17,7 @@
         margin: 0;
         padding: 0;
         overflow-x: hidden;
-        background-color: var(--background-color);
+        background: var(--background-color);
         background-image: url("../images/img-b.jpg");
         -webkit-background-image: url("../images/img-b.jpg");
         -moz-background-image: url("../images/img-b.jpg");
@@ -217,10 +217,12 @@
         background: rgb(44, 44, 44);
         padding-bottom: 20px;
     }
-    #proyectos .proyectos-items{
+    #proyectos div{
         width: calc(90% - 20px);
         margin: auto;
-        padding: 10px;
+    }
+    #proyectos div .proyectos-items{
+        width: 100%;
     }
     #proyectos .proyectos-items .item{
         width: 100%;
@@ -247,14 +249,15 @@
         padding-top: 40px;
         top: 0;
         position: fixed;
-        transform: translateX(100%);
-        -o-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
+        transform: translateX(200%);
+        -o-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -webkit-transform: translateX(200%);
         transition: 0.5s ease-in;
         overflow-y: scroll;
         overflow-x: hidden;
-    }
+        -moz-transform: translateX(200%);
+}
     .mostrarProyectos{
         transform: translateX(0px) !important;
         -o-transform: translateX(0px) !important;
@@ -320,14 +323,14 @@
         padding-top: 40px;
         top: 0;
         position: fixed;
-        transform: translateX(100%);
-        -o-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
+        transform: translateX(200%);
+        -o-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -webkit-transform: translateX(200%);
         transition: 0.5s ease-in;
         overflow-y: scroll;
         overflow-x: hidden;
-        -moz-transform: translateX(100%);
+        -moz-transform: translateX(200%);
 }
     .mostrarContactos{
         transform: translateX(0px) !important;
@@ -401,3 +404,64 @@
     }
 }
 
+
+@media screen and (min-width: 600px) {
+    #servicios .item-servicios{
+        width: calc(70% - 20px);
+    }
+    #proyectos .proyectos-items{
+        width: calc(70% - 20px);
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .main-title{
+        font-size: 1.7em;
+        color: var(--orange-color);
+        text-align: center;
+    }
+    .title{
+        font-size: 1.4em;
+        color: var(--text-color);
+        text-align: center;
+    }
+    .decription{
+        font-size: 1.2em;
+        color: var(--text-color);
+        text-align: left;
+    }
+    p{
+        font-size: 0.99em;
+    }
+    .main-content-principal{
+        max-width: 1500px;
+        margin: auto;
+    }
+    #servicios{
+        width: 90%;
+        margin: auto;
+    }
+    #servicios .super-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #servicios .item-servicios{
+        width: calc(90% - 20px);
+    }
+    #proyectos{
+        width: 90%;
+    }
+    #proyectos .proyectos-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: transparent;
+        width: 100%;
+    }
+    #proyectos .proyectos-items div:last-child{
+        grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+    }
+    
+  }
