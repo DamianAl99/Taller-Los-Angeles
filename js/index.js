@@ -63,17 +63,17 @@ const clickContactos = () => {
 
 const ServiciosJson = [
   {
-    title: "Alineacion de ruedas",
+    title: "Centro de lubricación",
     descriptions:
       "contamos con el servicio de alineación de ruedas, realizado con un equipo y materiales sin precedentes para proporcionarle a su vehículo las máximas garantías. Trabajamos con la marca Space, que nos proporciona lo último en alineadoras de ruedas, unos dispositivos sin precedentes y que hacen del trabajo un proceso mucho más eficiente y profesional",
   },
   {
-    title: "Alineacion de ruedas 2",
+    title: "Chequeo computarizado",
     descriptions:
       "contamos con el servicio de alineación de ruedas, realizado con un equipo y materiales sin precedentes para proporcionarle a su vehículo las máximas garantías. Trabajamos con la marca Space, que nos proporciona lo último en alineadoras de ruedas, unos dispositivos sin precedentes y que hacen del trabajo un proceso mucho más eficiente y profesional",
   },
   {
-    title: "Alineacion de ruedas 3",
+    title: "Mecánica general",
     descriptions:
       "contamos con el servicio de alineación de ruedas, realizado con un equipo y materiales sin precedentes para proporcionarle a su vehículo las máximas garantías. Trabajamos con la marca Space, que nos proporciona lo último en alineadoras de ruedas, unos dispositivos sin precedentes y que hacen del trabajo un proceso mucho más eficiente y profesional",
   },
