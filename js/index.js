@@ -65,7 +65,12 @@ const ServiciosJson = [
   {
     title: "Centro de lubricación",
     descriptions:
-      "Ofrecemos con los mejores precios, una excelente logística y una gran gama de productos unicos como lubricantes para motores livianos y pesados, aceites para sistemas de transmisión, fluidos y grasas para diversas aplicaciones.",
+      "Ofrecemos con los mejores precios, una excelente logística y una gran gama de productos unicos como lubricantes para motores livianos y pesados, aceites para sistemas de transmisión, fluidos y grasas para diversas aplicaciones. Hacemos: Cambio de aceite motor, Cambio de aceite de caja, Cambio de aceite diferencial ",
+  },
+  {
+    title: "Mecánica ligera",
+    descriptions:
+      "En Mecanica Los Angeles Racing, ponemos toda nuestra profesionalidad y experiencia para resolver problemas/fallas en su coche. Hacemos: Reparación de tren delantero y trasero Reparación de motor y caja de cambios (caja mecánica), Adaptaciones en general, Reparación de frenos",
   },
   {
     title: "Chequeo computarizado",
@@ -73,63 +78,63 @@ const ServiciosJson = [
       "Un diagnóstico computarizado se realiza, cuando en el panel de instrumentos (tablero) aparece una luz de color ámbar o amarillo que indique una advertencia en los diferentes sistema computarizado o electrónico de vehículo. Con nuestro diagnóstico computarizado efectuamos diagnóstico computarizado de fallas por sistema scanner",
   },
   {
-    title: "Mecánica general",
+    title: "Carga de Gas",
     descriptions:
-      "En Mecanica Los Angeles Racing, ponemos toda nuestra profesionalidad y experiencia para resolver todo tipo de problemas/falllas en su coche.",
+      "El aire acondicionado y el climatizador son un equipamiento de confort imprescindible hoy en día en los vehiculos.",
   },
 ];
 
 const ProyectosJson = [
   {
     title: "Alineacion de ruedas",
-    img: "images/img-a.jpg",
+    img: "images/img-h.jpeg",
   },
   {
     title: "Alineacion de ruedas",
-    img: "images/img-b.jpg",
+    img: "images/img-i.jpeg",
   },
   {
     title: "Alineacion de ruedas",
-    img: "images/img-c.jpg",
+    img: "images/img-k.jpeg",
   },
 ];
 
 const PagesProyectosJson = [
   {
     title: "Alineacion de ruedas",
-    img: "images/img-a.jpg",
+    img: "images/img-h.jpeg",
   },
   {
     title: "Alineacion de ruedas",
-    img: "images/img-b.jpg",
+    img: "images/img-i.jpeg",
   },
   {
     title: "Alineacion de ruedas",
-    img: "images/img-c.jpg",
+    img: "images/img-k.jpeg",
   },
   {
     title: "Alineacion de ruedas",
-    img: "images/img-a.jpg",
+    img: "images/img-l.jpeg",
   },
   {
     title: "Alineacion de ruedas",
-    img: "images/img-b.jpg",
+    img: "images/img-m.jpeg",
   },
   {
     title: "Alineacion de ruedas",
-    img: "images/img-c.jpg",
+    img: "images/img-n.jpeg",
   },
   {
     title: "Alineacion de ruedas",
-    img: "images/img-a.jpg",
+    img: "images/img-p.jpeg",
   },
   {
     title: "Alineacion de ruedas",
-    img: "images/img-b.jpg",
+    img: "images/img-q.jpeg",
   },
   {
     title: "Alineacion de ruedas",
-    img: "images/img-c.jpg",
+    img: "images/img-r.jpeg",
   },
 ];
 

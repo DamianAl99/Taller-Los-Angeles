@@ -18,10 +18,10 @@
         padding: 0;
         overflow-x: hidden;
         background: var(--background-color);
-        background-image: url("../images/img-b.jpg");
-        -webkit-background-image: url("../images/img-b.jpg");
-        -moz-background-image: url("../images/img-b.jpg");
-        -o-background-image: url("../images/img-b.jpg");
+        background-image: url("../images/img-c.jpg");
+        -webkit-background-image: url("../images/img-c.jpg");
+        -moz-c.jpg");
+        -o-background-image: url("../images/img-c.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         -webkit-background-size: cover;
@@ -369,6 +369,24 @@
     #pagesContactos .btn-ws button{
         width: 200px;
         margin-left: calc(50% - 100px);
+    }
+
+
+    #marcas{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+        background: var(--background-color);
+    }
+    #marcas .marca{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    #marcas .marca img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
     }
 
 
