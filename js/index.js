@@ -86,30 +86,30 @@ const ServiciosJson = [
 
 const ProyectosJson = [
   {
-    title: "Alineacion de ruedas",
+    title: "Montaje de motor reparado",
     img: "images/img-h.jpeg",
   },
   {
-    title: "Alineacion de ruedas",
+    title: "Chequeo computarizado",
     img: "images/img-i.jpeg",
   },
   {
-    title: "Alineacion de ruedas",
+    title: "Mantenimiento de motor",
     img: "images/img-k.jpeg",
   },
 ];
 
 const PagesProyectosJson = [
   {
-    title: "Alineacion de ruedas",
+    title: "Montaje de motor reparado",
     img: "images/img-h.jpeg",
   },
   {
-    title: "Alineacion de ruedas",
+    title: "Chequeo computarizados",
     img: "images/img-i.jpeg",
   },
   {
-    title: "Alineacion de ruedas",
+    title: "Mantenimiento de motor",
     img: "images/img-k.jpeg",
   },
   {
@@ -168,8 +168,10 @@ const pintarPagesProyectosJson = () => {
   let content = "";
   PagesProyectosJson.forEach((proyectos) => {
     content += `
+    <div>
       <div class="title">${proyectos.title}</div>
-      <div class="item"><img loading="lazy  "src="${proyectos.img}" alt="" srcset=""></div>`;
+      <div class="item"><img loading="lazy  "src="${proyectos.img}" alt="" srcset=""></div>
+      </div>`;
   });
   divPagesProyectos.innerHTML = content;
 };

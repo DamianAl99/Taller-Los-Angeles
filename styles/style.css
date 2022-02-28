@@ -302,7 +302,7 @@
         margin: auto;
         padding: 10px;
     }
-    #pagesProyectos .pagesProyectos-items .item{
+    #pagesProyectos .pagesProyectos-items div .item{
         width: 100%;
         height: 250px;
         overflow: hidden;
@@ -493,5 +493,18 @@
         grid-row-start: 3;
         grid-row-end: 3;
     }
-    
+
+    #pagesProyectos .pagesProyectos-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    #pagesProyectos .pagesProyectos-items div .item{
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        margin: 20px 0 20px 0;
+        border-radius: 4px;
+        background: black;
+    }
   }
