@@ -407,9 +407,14 @@
     footer .redes-sociales .ig i,
     footer .redes-sociales .fb i{
         font-size: 2em;
-        color: black;
+        color: white;
     }
     footer .derechos p{
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+    }
+    footer .derechos p a{
         color: black;
         text-align: center;
         margin-top: 20px;
