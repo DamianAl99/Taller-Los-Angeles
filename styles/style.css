@@ -20,7 +20,7 @@
         background: var(--background-color);
         background-image: url("../images/img-c.jpg");
         -webkit-background-image: url("../images/img-c.jpg");
-        -moz-c.jpg");
+        -moz-background-image: url("../images/img-c.jpg");
         -o-background-image: url("../images/img-c.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -382,6 +382,9 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        -webkit-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        -moz-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        -o-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     #marcas .marca img{
         width: 100%;
