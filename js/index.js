@@ -70,7 +70,7 @@ const ServiciosJson = [
   {
     title: "Mecánica ligera",
     descriptions:
-      "En Mecanica Los Angeles Racing, ponemos toda nuestra profesionalidad y experiencia para resolver problemas/fallas en su coche. Hacemos: Reparación de tren delantero y trasero Reparación de motor y caja de cambios (caja mecánica), Adaptaciones en general, Reparación de frenos",
+      "En Mecanica Los Angeles Racing, ponemos toda nuestra profesionalidad y experiencia para resolver problemas/fallas en su coche. Hacemos: Reparación de tren delantero y trasero, Reparación de motor y caja de cambios (caja mecánica), Adaptaciones en general, Reparación de frenos",
   },
   {
     title: "Chequeo computarizado",
@@ -105,7 +105,7 @@ const PagesProyectosJson = [
     img: "images/img-h.jpeg",
   },
   {
-    title: "Chequeo computarizados",
+    title: "Chequeo computarizado",
     img: "images/img-i.jpeg",
   },
   {
