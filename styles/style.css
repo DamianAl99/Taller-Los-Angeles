@@ -11,7 +11,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     html{
-        scroll-behavior: smooth;
+        scroll-behavior: smooth ;
     }
     body{
         margin: 0;
@@ -255,7 +255,7 @@
         -o-transform: translateX(200%);
         -ms-transform: translateX(200%);
         -webkit-transform: translateX(200%);
-        transition: 0.5s ease-in;
+        transition: 0.2s ease-in;
         overflow-y: scroll;
         overflow-x: hidden;
         -moz-transform: translateX(200%);
@@ -329,7 +329,7 @@
         -o-transform: translateX(200%);
         -ms-transform: translateX(200%);
         -webkit-transform: translateX(200%);
-        transition: 0.5s ease-in;
+        transition: 0.2s ease-in;
         overflow-y: scroll;
         overflow-x: hidden;
         -moz-transform: translateX(200%);
