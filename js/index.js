@@ -65,17 +65,17 @@ const ServiciosJson = [
   {
     title: "Centro de lubricación",
     descriptions:
-      "contamos con el servicio de alineación de ruedas, realizado con un equipo y materiales sin precedentes para proporcionarle a su vehículo las máximas garantías. Trabajamos con la marca Space, que nos proporciona lo último en alineadoras de ruedas, unos dispositivos sin precedentes y que hacen del trabajo un proceso mucho más eficiente y profesional",
+      "Ofrecemos con los mejores precios, una excelente logística y una gran gama de productos unicos como lubricantes para motores livianos y pesados, aceites para sistemas de transmisión, fluidos y grasas para diversas aplicaciones.",
   },
   {
     title: "Chequeo computarizado",
     descriptions:
-      "contamos con el servicio de alineación de ruedas, realizado con un equipo y materiales sin precedentes para proporcionarle a su vehículo las máximas garantías. Trabajamos con la marca Space, que nos proporciona lo último en alineadoras de ruedas, unos dispositivos sin precedentes y que hacen del trabajo un proceso mucho más eficiente y profesional",
+      "Un diagnóstico computarizado se realiza, cuando en el panel de instrumentos (tablero) aparece una luz de color ámbar o amarillo que indique una advertencia en los diferentes sistema computarizado o electrónico de vehículo. Con nuestro diagnóstico computarizado efectuamos diagnóstico computarizado de fallas por sistema scanner",
   },
   {
     title: "Mecánica general",
     descriptions:
-      "contamos con el servicio de alineación de ruedas, realizado con un equipo y materiales sin precedentes para proporcionarle a su vehículo las máximas garantías. Trabajamos con la marca Space, que nos proporciona lo último en alineadoras de ruedas, unos dispositivos sin precedentes y que hacen del trabajo un proceso mucho más eficiente y profesional",
+      "En Mecanica Los Angeles Racing, ponemos toda nuestra profesionalidad y experiencia para resolver todo tipo de problemas/falllas en su coche.",
   },
 ];
 
