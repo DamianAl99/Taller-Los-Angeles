@@ -1,510 +1,528 @@
-    :root {
-        --orange-color: #ff6f00;
-        --text-color: #6b6b6b;
-        --secondText-color: #fcfcfc;
-        --background-color: #fdfdfd;
-        --secondBackground-color: #000000c9;
-
-    }
-    *{
-        margin: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    html{
-        scroll-behavior: smooth ;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        background: var(--background-color);
-        background-image: url("../images/img-c.jpg");
-        -webkit-background-image: url("../images/img-c.jpg");
-        -moz-background-image: url("../images/img-c.jpg");
-        -o-background-image: url("../images/img-c.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        -moz-background-attachment: fixed;
-        -o-background-attachment: fixed;
-        background-position: center center;
-        position: relative;
-    }
-
-    h1, h2, h3, h4, span, p, a{
-        font-weight: normal;
-        font-size: 14px;
-        color: rgb(44, 44, 44);
-        text-decoration: none;
-    }
-    .super-title{
-        font-size: 2em;
-        font-weight: bolder;
-        letter-spacing: 0.5px;
-        color: var(--secondText-color);
-        text-align: center;
-    }
-    .super-subtitle{
-        font-size: 1.5em;
-        color: var(--text-color);
-        text-align: center;
-    }
-    .main-title{
-        font-size: 1.5em;
-        color: var(--orange-color);
-        text-align: center;
-    }
-    .title{
-        font-size: 1.2em;
-        color: var(--text-color);
-        text-align: center;
-    }
-    .decription{
-        font-size: 1em;
-        color: var(--text-color);
-        text-align: left;
-    }
-    .p{
-        font-size: .8em;
-        color: var(--text-color);
-    }
-    span{
-        font-weight: bold;
-        font-size: 1.2em;
-    }
-    .menu-icon{
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        right: 0;
-        top: 5px;
-        cursor: pointer;
-    }
-    .menu-icon-open {
-        color: var(--orange-color);
-        font-size: 1.5em;
-        z-index: 0;
-    }
-    .menu-icon-close {
-        color: var(--secondText-color);
-        font-size: 1.5em;
-        z-index: 9;
-    }
-   .btn{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .btn button{
-        width: 150px;
-        height: 100%;
-        padding: 15px;
-        border: none;
-        border-radius: 4px;
-        box-shadow: 0 0 0 rgba(12, 12, 12, 0.118);
-        background: var(--orange-color);
-        cursor: pointer;
-        font-size: 1em;
-        color: var(--secondText-color);
-    }
-
-
-
-    header{
-        width: 100%;
-        height: 100vh;
-        background: var(--orange-color);
-        position: fixed;
-        transform: translateX(100%);
-        -o-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        top: 0;
-        transition: 0.2s linear;
-    }
-    .header-open{/*se debe agregar esta clase para el menu*/
-        transform: translateX(0px);
-        -o-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-        -webkit-transform: translateX(0px);
-    }
-    header #menu{
-        width: 90%;
-        margin: 30px auto;
-        height: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        line-height: 60px;
-    }
-    header #menu a{
-        text-decoration: none;
-        color: var(--secondText-color);
-        font-weight: 500;
-        letter-spacing: 5px;
-        padding: 5px 0 5px 0px;
-        margin: 20px 0 0 0;
-        display: flex;
-        justify-content: center;
-        border-bottom: 1px solid var(--secondText-color);
-        transition: 0.2s linear;
-    }
-    header #menu a:hover{
-        background: var(--secondText-color);
-        color: var(--orange-color);
-        font-size: 1.2em;
-    } 
-
-
-
-    main{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    main #inicio{
-        width: 100%;
-        height: 100vh;
-        background: var(--secondBackground-color);
-        display: flex;
-        align-items: center;
-    }
-    main #inicio .inicio-texts-principal{
-        background: transparent;
-        width: 100%;
-    }
-    main #inicio .inicio-texts-principal .super-title{
-        width: 50%;
-        text-align: center;
-        margin: auto;
-    }
-    main #inicio .inicio-texts-principal .super-subtitle{
-        width: 90%;
-        text-align: center;
-        margin: 50px auto;
-    }
-    main #inicio .inicio-texts-principal .btn-contactos button, .btn-proyectos button{
-        margin-left: calc(50% - 75px);
-    }
-
-
-
-
-    #servicios{
-        background: var(--background-color);
-        padding-bottom: 20px;
-    }
-    #servicios .item-servicios{
-        width: calc(90% - 20px);
-        margin: auto;
-        padding: 10px;
-        background-color: white;
-        box-shadow: 0 0 10px rgb(199, 199, 199);
-        margin-top: 20px;
-    }
-
-
-
-
-    #proyectos{
-        background: rgb(44, 44, 44);
-        padding-bottom: 20px; 
-        width: 100%;  
-    }
-    #proyectos .proyectos-items{
-        width: calc(90% - 20px);
-        margin: auto;
-    }
-    #proyectos .proyectos-items div {
-        width: 100%;
-    }
-    #proyectos .proyectos-items .item{
-        width: 100%;
-        height: 250px;
-        overflow: hidden;
-        margin: 20px 0 20px 0;
-        border-radius: 4px;
-        background: black;
-    }
-    #proyectos .proyectos-items .item img{
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
-
-
-
-
-    #pagesProyectos{
-        background: var(--background-color);
-        padding-bottom: 20px;
-        width: 100%;
-        height: 100%;
-        padding-top: 40px;
-        top: 0;
-        position: fixed;
-        transform: translateX(200%);
-        -o-transform: translateX(200%);
-        -ms-transform: translateX(200%);
-        -webkit-transform: translateX(200%);
-        transition: 0.2s ease-in;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        -moz-transform: translateX(200%);
+:root {
+  --orange-color: #ff6f00;
+  --text-color: #6b6b6b;
+  --secondText-color: #fcfcfc;
+  --background-color: #fdfdfd;
+  --secondBackground-color: #000000c9;
 }
-    .mostrarProyectos{
-        transform: translateX(0px) !important;
-        -o-transform: translateX(0px) !important;
-        -ms-transform: translateX(0px) !important;
-        -webkit-transform: translateX(0px) !important;
-    }
-    .ocultarMain{
-        display: none;
-    }
-    .divEngranage{
-        background: transparent;
-        width: 100px;
-        height: 100px;
-        border-radius: 100%; 
-        animation: vueltaEngranaje 5s infinite linear;
-        margin-top: 50%;
-        left: -50px;
-        cursor: pointer;
-        position:fixed;
-    }
-    .divEngranage img{
-        color: var(--orange-color);
-    }
-    .btn-volver{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .btn-volver button{
-        margin-left: calc(50% - 75px);
-        background: transparent;
-        border: 2px var(--orange-color) solid;
-        color: var(--orange-color);
-    }
-    .btn-volver button:hover{
-        background: var(--orange-color);
-        color: rgb(255, 255, 255);
-    }
-    #pagesProyectos .pagesProyectos-items{
-        width: calc(90% - 20px);
-        margin: auto;
-        padding: 10px;
-    }
-    #pagesProyectos .pagesProyectos-items div .item{
-        width: 100%;
-        height: 250px;
-        overflow: hidden;
-        margin: 20px 0 20px 0;
-        border-radius: 4px;
-        background: black;
-    }
-    #pagesProyectos .pagesProyectos-items .item img{
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
-
-
-    #pagesContactos{
-        background:var(--background-color);
-        padding-bottom: 20px;
-        width: 100%;
-        height: 100%;
-        padding-top: 40px;
-        top: 0;
-        position: fixed;
-        transform: translateX(200%);
-        -o-transform: translateX(200%);
-        -ms-transform: translateX(200%);
-        -webkit-transform: translateX(200%);
-        transition: 0.2s ease-in;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        -moz-transform: translateX(200%);
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-    .mostrarContactos{
-        transform: translateX(0px) !important;
-        -o-transform: translateX(0px) !important;
-        -ms-transform: translateX(0px) !important;
-        -webkit-transform: translateX(0px) !important;
-    }
-    #pagesContactos .maps{
-        width: 90%;
-        margin: auto;
-        height: auto;
-        overflow-x: hidden;
-    }
-    #pagesContactos .maps iframe{
-        width: 100%;
-    }
-    #pagesContactos .maps .calle{
-        width: 60%;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-    #pagesContactos .maps .calle h4{
-        text-align: center;
-    } 
-    #pagesContactos .btn-ws{
-        width: 100%;
-        padding: 10px 0 10px 0;
-        background: transparent;
-    }
-    #pagesContactos .btn-ws a{  
-        color: white;
-        font-size: 1em;
-    }
-    #pagesContactos .btn-ws button{
-        width: 200px;
-        margin-left: calc(50% - 100px);
-    }
-
-
-    #marcas{
-        width: 100%;
-        height: auto;
-        overflow-y: hidden;
-        background: var(--background-color);
-    }
-    #marcas .marca{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        -webkit-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        -moz-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        -o-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    #marcas .marca img{
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-    }
-
-
-
-
-    footer{
-        background: rgb(44, 44, 44);
-        padding: 10px 0 10px 0;
-    }
-    footer .redes-sociales{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    footer .redes-sociales .ig i,
-    footer .redes-sociales .fb i{
-        font-size: 2em;
-        color: white;
-    }
-    footer .derechos p{
-        color: black;
-        text-align: center;
-        margin-top: 20px;
-    }
-    footer .derechos p a{
-        color: black;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-
-@keyframes vueltaEngranaje{
-    0%{
-        transform-origin: center;
-        transform: rotate(360deg);
-    }
-    100%{
-        transform-origin: center;
-        transform: rotate(0deg);
-    }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: var(--background-color);
+  background-image: url("../images/img-c.jpg");
+  -webkit-background-image: url("../images/img-c.jpg");
+  -moz-background-image: url("../images/img-c.jpg");
+  -o-background-image: url("../images/img-c.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  background-position: center center;
+  position: relative;
 }
 
+h1,
+h2,
+h3,
+h4,
+span,
+p,
+a {
+  font-weight: normal;
+  font-size: 14px;
+  color: rgb(44, 44, 44);
+  text-decoration: none;
+}
+.super-title {
+  font-size: 2em;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  color: var(--secondText-color);
+  text-align: center;
+}
+.super-subtitle {
+  font-size: 1.5em;
+  color: var(--text-color);
+  text-align: center;
+}
+.main-title {
+  font-size: 1.5em;
+  color: var(--orange-color);
+  text-align: center;
+}
+.title {
+  font-size: 1.2em;
+  color: var(--text-color);
+  text-align: center;
+}
+.decription {
+  font-size: 1em;
+  color: var(--text-color);
+  text-align: left;
+}
+.p {
+  font-size: 0.8em;
+  color: var(--text-color);
+}
+span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.menu-icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 5px;
+  cursor: pointer;
+}
+.menu-icon-open {
+  color: var(--orange-color);
+  font-size: 1.5em;
+  z-index: 0;
+}
+.menu-icon-close {
+  color: var(--secondText-color);
+  font-size: 1.5em;
+  z-index: 9;
+}
+.btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.btn button {
+  width: 150px;
+  height: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 0 rgba(12, 12, 12, 0.118);
+  background: var(--orange-color);
+  cursor: pointer;
+  font-size: 1em;
+  color: var(--secondText-color);
+}
+div.main-content-principal {
+  max-width: 100%;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: var(--orange-color);
+  position: fixed;
+  transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  top: 0;
+  transition: 0.2s linear;
+}
+.header-open {
+  /*se debe agregar esta clase para el menu*/
+  transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+header #menu {
+  width: 90%;
+  margin: 30px auto;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+}
+header #menu a {
+  text-decoration: none;
+  color: var(--secondText-color);
+  font-weight: 500;
+  letter-spacing: 5px;
+  padding: 5px 0 5px 0px;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--secondText-color);
+  transition: 0.2s linear;
+}
+header #menu a:hover {
+  background: var(--secondText-color);
+  color: var(--orange-color);
+  font-size: 1.2em;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main #inicio {
+  width: 100%;
+  height: 100vh;
+  background: var(--secondBackground-color);
+  display: flex;
+  align-items: center;
+}
+main #inicio .inicio-texts-principal {
+  background: transparent;
+  width: 100%;
+}
+main #inicio .inicio-texts-principal .super-title {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+main #inicio .inicio-texts-principal .super-subtitle {
+  width: 90%;
+  text-align: center;
+  margin: 50px auto;
+}
+main #inicio .inicio-texts-principal .btn-contactos button,
+.btn-proyectos button {
+  margin-left: calc(50% - 75px);
+}
+
+#servicios {
+  background: var(--background-color);
+  padding-bottom: 20px;
+  position: relative;
+}
+#servicios .item-servicios {
+  width: calc(90% - 20px);
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgb(199, 199, 199);
+  margin-top: 20px;
+}
+#servicios .item-servicios div:nth-child(2){
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: transparent;
+}
+#servicios .item-servicios div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+#proyectos {
+  background: rgb(44, 44, 44);
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100vh;
+  max-height: auto;
+  position: relative;
+}
+#proyectos .proyectos-items {
+  width: calc(90% - 20px);
+  margin: auto;
+}
+#proyectos .proyectos-items div {
+  width: 100%;
+}
+#proyectos .proyectos-items div .item {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin: 20px 0 20px 0;
+  border-radius: 4px;
+  background: black;
+}
+#proyectos .proyectos-items div .item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#pagesProyectos {
+  background: var(--background-color);
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  top: 0;
+  position: fixed;
+  transform: translateX(200%);
+  -o-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  -webkit-transform: translateX(200%);
+  transition: 0.02s ease-in;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -moz-transform: translateX(200%);
+}
+.mostrarProyectos {
+  transform: translateX(0px) !important;
+  -o-transform: translateX(0px) !important;
+  -ms-transform: translateX(0px) !important;
+  -webkit-transform: translateX(0px) !important;
+}
+.ocultarMain {
+  display: none;
+}
+.divEngranage {
+  background: transparent;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  animation: vueltaEngranaje 5s infinite linear;
+  margin-top: 50%;
+  left: -50px;
+  cursor: pointer;
+  position: fixed;
+}
+.divEngranage img {
+  color: var(--orange-color);
+}
+.btn-volver {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.btn-volver button {
+  margin-left: calc(50% - 75px);
+  background: transparent;
+  border: 2px var(--orange-color) solid;
+  color: var(--orange-color);
+}
+.btn-volver button:hover {
+  background: var(--orange-color);
+  color: rgb(255, 255, 255);
+}
+#pagesProyectos .pagesProyectos-items {
+  width: calc(90% - 20px);
+  margin: auto;
+  padding: 10px;
+}
+#pagesProyectos .pagesProyectos-items div .item {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin: 20px 0 20px 0;
+  border-radius: 4px;
+  background: black;
+}
+#pagesProyectos .pagesProyectos-items .item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#pagesContactos {
+  background: var(--background-color);
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  top: 0;
+  position: fixed;
+  transform: translateX(200%);
+  -o-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  -webkit-transform: translateX(200%);
+  transition: 0.2s ease-in;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -moz-transform: translateX(200%);
+}
+.mostrarContactos {
+  transform: translateX(0px) !important;
+  -o-transform: translateX(0px) !important;
+  -ms-transform: translateX(0px) !important;
+  -webkit-transform: translateX(0px) !important;
+}
+#pagesContactos .maps {
+  width: 90%;
+  margin: auto;
+  height: auto;
+  overflow-x: hidden;
+}
+#pagesContactos .maps iframe {
+  width: 100%;
+}
+#pagesContactos .maps .calle {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+#pagesContactos .maps .calle h4 {
+  text-align: center;
+}
+#pagesContactos .btn-ws {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  background: transparent;
+}
+#pagesContactos .btn-ws a {
+  color: white;
+  font-size: 1em;
+}
+#pagesContactos .btn-ws button {
+  width: 200px;
+  margin-left: calc(50% - 100px);
+}
+
+#marcas {
+  width: 100%;
+  height: auto;
+  overflow-y: hidden;
+  background: var(--background-color);
+  position: relative;
+}
+#marcas .marca {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -webkit-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -moz-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -o-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#marcas .marca img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+footer {
+  background: rgb(44, 44, 44);
+  padding: 10px 0 10px 0;
+}
+footer .redes-sociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .redes-sociales .ig i,
+footer .redes-sociales .fb i {
+  font-size: 2em;
+  color: white;
+}
+footer .derechos p {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+footer .derechos p a {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@keyframes vueltaEngranaje {
+  0% {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+  100% {
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+}
 
 @media screen and (min-width: 600px) {
-    #servicios .item-servicios{
-        width: calc(70% - 20px);
-    }
-    #proyectos .proyectos-items{
-        width: calc(70% - 20px);
-    }
+  #servicios .item-servicios {
+    width: calc(70% - 20px);
+  }
+  #proyectos .proyectos-items {
+    width: calc(70% - 20px);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main-title {
+    font-size: 1.7em;
+    color: var(--orange-color);
+    text-align: center;
+  }
+  .title {
+    font-size: 1.4em;
+    color: var(--text-color);
+    text-align: center;
+  }
+  .decription {
+    font-size: 1.2em;
+    color: var(--text-color);
+    text-align: left;
+  }
+  p {
+    font-size: 0.99em;
+  }
+  #servicios .super-item {
+    display: grid;
+    max-width: 900px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+  #servicios .item-servicios {
+    width: calc(100% - 20px);
   }
 
-  @media screen and (min-width: 900px) {
-    .main-title{
-        font-size: 1.7em;
-        color: var(--orange-color);
-        text-align: center;
-    }
-    .title{
-        font-size: 1.4em;
-        color: var(--text-color);
-        text-align: center;
-    }
-    .decription{
-        font-size: 1.2em;
-        color: var(--text-color);
-        text-align: left;
-    }
-    p{
-        font-size: 0.99em;
-    }
-    .main-content-principal{
-        max-width: 1500px;
-        margin: auto;
-    }
-    #servicios{
-        width: 90%;
-        margin: auto;
-    }
-    #servicios .super-item{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    #servicios .item-servicios{
-        width: calc(90% - 20px);
-    }
-    #proyectos{
-        width: 90%;
-        margin: auto;
-    }
-    #proyectos .proyectos-items{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: transparent;
-        grid-gap: 10px;
-        width: 95%;
-    }
-    #proyectos .proyectos-items div:last-child{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 3;
-    }
-
-    #pagesProyectos .pagesProyectos-items{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-    #pagesProyectos .pagesProyectos-items div .item{
-        width: 100%;
-        height: 450px;
-        overflow: hidden;
-        margin: 20px 0 20px 0;
-        border-radius: 4px;
-        background: black;
-    }
+  #proyectos .proyectos-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: transparent;
+    grid-gap: 50px;
+    width: 95%;
+    max-width: 900px;
+    height: 400px;
+    margin: auto;
+    background: transparent;
   }
+  #proyectos .proyectos-items div {
+    height: 400px;
+    background: transparent;
+    display: inline;
+  }
+  #proyectos .proyectos-items div:last-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #proyectos .proyectos-items div .item {
+    background: transparent;
+    height: 100%;
+    display: initial;
+  }
+  #proyectos .proyectos-items div .item img {
+    background: transparent;
+    height: 100%;
+    overflow: hidden;
+  }
+
+
+  #pagesProyectos .pagesProyectos-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  #pagesProyectos .pagesProyectos-items div .item {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin: 20px 0 20px 0;
+    border-radius: 4px;
+    background: black;
+  }
+}

@@ -66,21 +66,25 @@ const ServiciosJson = [
     title: "Centro de lubricación",
     descriptions:
       "Ofrecemos con los mejores precios, una excelente logística y una gran gama de productos unicos como lubricantes para motores livianos y pesados, aceites para sistemas de transmisión, fluidos y grasas para diversas aplicaciones. Hacemos: Cambio de aceite motor, Cambio de aceite de caja, Cambio de aceite diferencial ",
+      img: "images/centro de lubricacion.jpg"
   },
   {
     title: "Mecánica ligera",
     descriptions:
       "En Mecanica Los Angeles Racing, ponemos toda nuestra profesionalidad y experiencia para resolver problemas/fallas en su coche. Hacemos: Reparación de tren delantero y trasero, Reparación de motor y caja de cambios (caja mecánica), Adaptaciones en general, Reparación de frenos",
+      img: "images/mecanica-ligera.png"
   },
   {
     title: "Chequeo computarizado",
     descriptions:
       "Un diagnóstico computarizado se realiza, cuando en el panel de instrumentos (tablero) aparece una luz de color ámbar o amarillo que indique una advertencia en los diferentes sistema computarizado o electrónico de vehículo. Con nuestro diagnóstico computarizado efectuamos diagnóstico computarizado de fallas por sistema scanner",
+      img: "images/chequeo computarizado.jpg"
   },
   {
     title: "Carga de Gas",
     descriptions:
       "El aire acondicionado y el climatizador son un equipamiento de confort imprescindible hoy en día en los vehiculos.",
+      img: "images/carga de gas.jpg"
   },
 ];
 
@@ -144,6 +148,7 @@ const pintarServiciosJson = () => {
     content += `
         <div class="item-servicios">
         <div class="title">${servicio.title}</div>
+        <div><img src="${servicio.img}"></div>
         <div class="description">
             <p>${servicio.descriptions}</p>
         </div>
@@ -159,7 +164,7 @@ const pintarProyectosJson = () => {
     <div>
       <div class="title">${proyectos.title}</div>
       <div class="item"><img loading="lazy  "src="${proyectos.img}" alt="" srcset=""></div>
-      </div>`;
+    </div>`;
   });
   divProyectos.innerHTML = content;
 };
@@ -170,7 +175,7 @@ const pintarPagesProyectosJson = () => {
     content += `
     <div>
       <div class="title">${proyectos.title}</div>
-      <div class="item"><img loading="lazy  "src="${proyectos.img}" alt="" srcset=""></div>
+      <div class="item"><img loading="lazy" src="${proyectos.img}" alt="" srcset=""></div>
       </div>`;
   });
   divPagesProyectos.innerHTML = content;
