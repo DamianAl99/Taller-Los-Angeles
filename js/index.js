@@ -27,37 +27,42 @@ const clickMenu = () => {
 };
 
 const clickProyectos = () => {
+  //al hacer click muestra el div proyecto y oculta el main
   btnProyectos.addEventListener("click", () => {
-    document
-      .querySelector("#pagesProyectos")
-      .classList.toggle("mostrarProyectos");
+    document.querySelector("#pagesProyectos").classList.toggle("mostrarProyectos");
     document.querySelector(".main").classList.toggle("ocultarMain");
+    document.querySelector("footer").classList.toggle("ocultarMain");
   });
   btnVolver.addEventListener("click", () => {
     document
       .querySelector("#pagesProyectos")
       .classList.toggle("mostrarProyectos");
     document.querySelector(".main").classList.toggle("ocultarMain");
+    document.querySelector("footer").classList.toggle("ocultarMain");
   });
   btnEngranage.addEventListener("click", () => {
     document
       .querySelector("#pagesProyectos")
       .classList.toggle("mostrarProyectos");
     document.querySelector(".main").classList.toggle("ocultarMain");
+    document.querySelector("footer").classList.toggle("ocultarMain");
   });
 };
 const clickContactos = () => {
   btnContactos.addEventListener("click", ()=>{
     document.querySelector("#pagesContactos").classList.toggle("mostrarContactos")
     document.querySelector(".main").classList.toggle("ocultarMain")
+    document.querySelector("footer").classList.toggle("ocultarMain");
   })
   btnVolverContactos.addEventListener("click", ()=>{
     document.querySelector("#pagesContactos").classList.toggle("mostrarContactos")
     document.querySelector(".main").classList.toggle("ocultarMain")
+    document.querySelector("footer").classList.toggle("ocultarMain");
   })
   btnEngranageContactos.addEventListener("click", ()=>{
     document.querySelector("#pagesContactos").classList.toggle("mostrarContactos")
     document.querySelector(".main").classList.toggle("ocultarMain")
+    document.querySelector("footer").classList.toggle("ocultarMain");
   })
 }
 
