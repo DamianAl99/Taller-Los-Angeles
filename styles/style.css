@@ -393,6 +393,12 @@ main #inicio .inicio-texts-principal .btn-contactos button,
 }
 #marcas .marca {
   width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+#marcas .marca .marca-center{
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -webkit-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -488,7 +494,7 @@ footer .derechos p a {
     grid-gap: 50px;
     width: 95%;
     max-width: 900px;
-    height: 400px;
+    height: 900px;
     margin: auto;
     background: transparent;
   }
