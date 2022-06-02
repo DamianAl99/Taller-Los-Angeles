@@ -68,10 +68,11 @@ a {
   color: var(--text-color);
   text-align: center;
 }
-.decription {
+.description {
   font-size: 1em;
   color: var(--text-color);
   text-align: left;
+  margin-bottom: 14px;
 }
 .p {
   font-size: 0.8em;
@@ -105,6 +106,13 @@ span {
 .btn {
   width: 100%;
   margin-bottom: 10px;
+}
+.servicio_mensaje{
+  color: var(--orange-color);
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+  border: 2px solid var(--orange-color);
+  animation: botonResaltante 0.89s infinite;
 }
 .btn button {
   width: 150px;
@@ -447,6 +455,17 @@ footer .derechos p a {
     transform: rotate(0deg);
   }
 }
+@keyframes botonResaltante {
+  0% {
+    padding: 0;
+  }
+  50% {
+    padding: 5px;
+  }
+  100%{
+    padding: 0;
+  }
+}
 
 @media screen and (min-width: 600px) {
   #servicios .item-servicios {
@@ -468,10 +487,11 @@ footer .derechos p a {
     color: var(--text-color);
     text-align: center;
   }
-  .decription {
+  .description {
     font-size: 1.2em;
     color: var(--text-color);
     text-align: left;
+    margin-bottom: 14px;
   }
   p {
     font-size: 0.99em;
